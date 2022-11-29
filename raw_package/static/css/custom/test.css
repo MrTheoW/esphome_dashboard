@@ -1,0 +1,61 @@
+/* Base */
+
+:root {
+  /* Dark mode*/
+  --dark-primary-bg-color: #202124;
+  --dark-alert-standard-color: #fafafa;
+  --dark-alert-standard-color-bg: #292A2D;
+  --dark-alert-bg: #454545;
+  --dark-esphome-background-header: #292A2D;
+  --dark-card-background-color: #292A2D;
+  --dark-primary-text-color: #a4a4a4;
+  --dark-update-available-color: #636ed8;
+  --dark-status-color: #ffffff;
+  --HAssBlue: #41BDF5;
+  --dark-alert-error-color: #931007;
+
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-primary-bg-color);
+    }
+
+    .page-footer{
+        background-color: var(--dark-primary-footer-bg-color);
+    }
+
+    .esphome-header{
+        background-color: var(--dark-esphome-background-header);
+    }
+    
+    .mwc-button{
+        --mdc-theme-primary: var(--HAssBlue);
+    }
+
+    .mwc-fab{
+        --mdc-theme-secondary: var(--HAssBlue);
+    }
+
+    :host {
+        background: var(--dark-card-background-color);
+        color: var(--dark-primary-text-color);
+    }
+
+    .status-bar {
+        background-color: var(--HAssBlue);
+        color: var(--HAssBlue);
+    }
+
+    .mdc-icon-button {
+        color: var(--HAssBlue);
+    }
+
+    .mdc-menu-surface {
+        background-color: var(--dark-alert-bg);
+    }
+
+    .warning {
+        color: var(--dark-alert-error-color);
+    }
+}
