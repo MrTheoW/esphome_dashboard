@@ -12,14 +12,23 @@
   --alert-success-color: #4caf50;
   --alert-success-color-bg: #edf7ee;
   --alert-warning-color: #ff9800;
-  --alert-warning-color-bg: #fff5e6;
   --alert-error-color: #d93025;
-  --alert-error-color-bg: #faefeb;
 
   --mdc-theme-primary: #03a9f4;
   --mdc-dialog-z-index: 998;
 
   --esphome-background-header: #e0e0e0;
+
+  /* Dark mode*/
+  --dark-primary-bg-color: #202124;
+  --dark-alert-standard-color: #fafafa;
+  --dark-alert-standard-color-bg: #292A2D;
+  --dark-alert-info-color-bg: #454545;
+  --dark-alert-success-color-bg: #454545;
+  --dark-alert-warning-color-bg: #454545;
+  --dark-alert-error-color-bg: #454545;
+  --dark-esphome-background-header: #292A2D;
+
 }
 
 html {
@@ -158,4 +167,18 @@ ul.browser-default li {
     box-sizing: border-box;
     justify-content: center;
   }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-primary-bg-color);
+    }
+
+    .page-footer{
+        background-color: var(--dark-primary-footer-bg-color);
+    }
+
+    .esphome-header{
+        background-color: var(--dark-esphome-background-header);
+    }
 }
